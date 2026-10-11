@@ -32,7 +32,10 @@ const tests = {
 	'%C2x': '\uFFFDx',
 	'%C2%B5': 'µ',
 	'%C2%B5%': 'µ%',
-	'%%C2%B5%': '%µ%'
+	'%%C2%B5%': '%µ%',
+	'%ea%ba%5a%ba': '%ea%baZ%ba',
+	'%C3%5A%A5': '%C3Z%A5',
+	'%C3%5A%A5%AB': '%C3Z%A5%AB'
 };
 
 function macro(t, input, expected) {
